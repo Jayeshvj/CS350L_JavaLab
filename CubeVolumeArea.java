@@ -38,5 +38,7 @@ public class CubeVolumeArea {
 		
 		c.printVolume();
 		c.printSurfaceArea();
+		
+		s.close();
 	}
 }
