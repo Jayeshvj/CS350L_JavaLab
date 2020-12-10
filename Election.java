@@ -10,6 +10,10 @@ class Ballot {
 	}
 	
 	public void castVote(int idx) {
+		if (idx > 5 || idx <= 0) {
+			System.out.println("Spoit ballot.");
+			return;
+		}
 		voteFrequency[idx - 1]++;
 	}
 	
