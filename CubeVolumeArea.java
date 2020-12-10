@@ -2,10 +2,10 @@ package java_lab;
 
 import java.util.Scanner;
 
-class Cuboid {
+class cuboid {
 	private double length, breadth, height;
 	
-	public Cuboid(double length, double breadth, double height) {
+	public cuboid(double length, double breadth, double height) {
 		this.length = length;
 		this.breadth = breadth;
 		this.height = height;
@@ -34,7 +34,7 @@ public class CubeVolumeArea {
 		
 		System.out.print("Enter length, breadth, and height: ");
 		double l = s.nextDouble(), b = s.nextDouble(), h = s.nextDouble();
-		Cuboid c = new Cuboid(l, b, h);
+		cuboid c = new cuboid(l, b, h);
 		
 		c.printVolume();
 		c.printSurfaceArea();

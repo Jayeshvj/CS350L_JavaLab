@@ -36,7 +36,7 @@ class StudentResult {
 	}
 	
 	public void display() {
-		System.out.println(this.rollNo + "\t" + this.marks[0] + "\t" + this.marks[1] + "\t" + this.marks[2] + "\t" + this.totalMarks);
+		System.out.println(this.rollNo + "\t\t" + this.marks[0] + "\t\t" + this.marks[1] + "\t\t" + this.marks[2] + "\t\t" + this.totalMarks);
 	}
 }
 
@@ -48,6 +48,11 @@ public class StudentMarks {
 			records[i-1] = new StudentResult();
 			records[i-1].readInput();
 		}
+		
+		StudentResult.printHeader();
+		for (StudentResult sr : records)
+			sr.display();
+		System.out.println();
 		
 		for (int i = 0; i < 3; i++)
 			System.out.println("The highest in subject " + (i+1) + " was scored by roll number " + StudentResult.highest[i].rollNo + " with marks = " + StudentResult.highest[i].marks[i]);
